@@ -6,33 +6,29 @@ public class myTry {
 
     public static void main(String[] args) {
 
-        int myArr[]={10,2,30,41,15,6,7};
+        int myArr[]={10,2};
+        int sum=0;
 
 
         System.out.println(Arrays.toString(myArr));
+        System.out.println("Array Lenght : "+myArr.length);
 
 
 
       Arrays.sort(myArr);
 
 
-        // Araarydeki elemanlari topla
+        for (int i = 0; i <+myArr.length ; i++) {
 
 
-        int toplam=0;
-
-        for (int i = 0; i < myArr.length-1; i++) {
 
 
-            toplam+=myArr.length;
+            i--;
+
 
 
         }
-        System.out.println(toplam);
-
-
-
-
+        }
 
     }
-}
+
