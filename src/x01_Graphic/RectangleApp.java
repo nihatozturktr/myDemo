@@ -14,10 +14,13 @@ public class RectangleApp {
         rect.x=15;
         rect.y=18;
 
-        System.out.println(rect.x);
-        System.out.println(rect.y);
+
         System.out.println(rect.width);
         System.out.println(rect.height);
+
+        System.out.printf("Position: (%d, %d)", rect.x,rect.y);
+
+
 
         Rectangle rect2 = new Rectangle();
 
@@ -28,7 +31,10 @@ public class RectangleApp {
         rect2.y=25;
 
 
+        System.out.println(rect2.width);
+        System.out.println(rect2.height);
 
+        System.out.printf("Position: (%d, %d)", rect.x,rect.y);
 
 
 
