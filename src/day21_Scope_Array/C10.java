@@ -19,21 +19,18 @@ public class C10 {
          *
          */
 
-        String output=nul;
+
         Scanner scanner = new Scanner(System.in);
         String text = scanner.nextLine();
         char[] arr = text.toCharArray();
 
         //your code goes here
-        for (int i = arr.length-1; i < arr.length; i--) {
-
-
-
-
-
-
+        int n=arr.length;
+        String str="";
+        for(int i=n-1 ; i>-1 ; i--){
+            str=str+arr[i];
         }
-
+        System.out.println(str);
 
 
 
