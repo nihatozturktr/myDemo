@@ -6,8 +6,9 @@ public class LoanCalculator {
     public static void main(String[] args) {
 
             Scanner scanner = new Scanner(System.in);
+        System.out.println("Please Enter Amount");
             int amount = scanner.nextInt();
-            int ramount=0;
+            int actual_amount=0;
             //your code goes here
 
             //her ay kredi tutariin. yuzde 10 unu geri ode
@@ -19,10 +20,12 @@ public class LoanCalculator {
 
             for(int i= 0; i< 3;i++ ){
 
-                ramount= amount*10/100;
-                System.out.println(i +". taksit "+ramount);
+                actual_amount= amount*10/100;
+                System.out.println(i +". taksit "+actual_amount);
+                amount=amount-actual_amount;
+                System.out.println(" Kalan "+amount);
 
-                ramount=amount-ramount;
+
 
 
 
@@ -30,6 +33,6 @@ public class LoanCalculator {
 
 
             }
-
+        System.out.println(amount);
     }
 }
