@@ -1,47 +1,69 @@
 package x01_Graphic;
 
 
+import static x01_Graphic.Rectangle.getCount;
 
 public class RectangleApp {
 
     public static void main(String[] args) {
-        System.out.println("Thir program uses a rectangle");
-        Rectangle rect =new Rectangle();
+        System.out.println("This program uses a rectangle");
+        Rectangle rect = new Rectangle(-12, -14);
 
-        rect.width=10;
-        rect.height=5;
+        rect.setX(11);
+        rect.setY(48);
 
-        rect.x=15;
-        rect.y=18;
+        System.out.println("Rectangle width is: " + rect.getWidth());
+        System.out.println("Rectangle height is: " + rect.getHeight());
+        System.out.printf("Position: (%d, %d)", rect.getX(), rect.getY());
+        System.out.println();
 
+        System.out.println("The area is: " + rect.getArea());
+        System.out.println("The perimeter is: " + rect.getPerimeter());
 
-        System.out.println(rect.width);
-        System.out.println(rect.height);
+        System.out.println("Number of rectangles created: " + getCount());
 
-        System.out.printf("Position: (%d, %d)", rect.x,rect.y);
+        System.out.println("\n\nSecond Rectangle\n");
+        Rectangle rect2 = new Rectangle(99, 55);
 
+        rect2.setPosition(33, 87);
 
+        System.out.println("Height: " + rect2.getHeight());
+        System.out.println("Width: " + rect2.getWidth());
+        System.out.printf("Position: (%d, %d)", rect2.getX(), rect2.getY());
+        System.out.println();
 
-        Rectangle rect2 = new Rectangle();
+        System.out.println("The area is: " + rect2.getArea());
+        System.out.println("The perimeter is: " + rect2.getPerimeter());
+        System.out.println();
+        System.out.println("Number of rectangles created: " + getCount());
 
-        rect2.width=11;
-        rect2.height=12;
+        Rectangle rect3 = new Rectangle();
 
-        rect2.x=20;
-        rect2.y=25;
+        System.out.println("Height: " + rect3.getHeight());
+        System.out.println("Width: " + rect3.getWidth());
+        System.out.printf("Position: (%d, %d)", rect3.getX(), rect3.getY());
+        System.out.println();
 
+        System.out.println("The area is: " + rect3.getArea());
+        System.out.println("The perimeter is: " + rect3.getPerimeter());
+        System.out.println("Number of rectangles created: " + getCount());
+        System.out.println();
 
-        System.out.println(rect2.width);
-        System.out.println(rect2.height);
+        Rectangle rect4 = new Rectangle(14, 55, 87, 99);
+        System.out.println("Number of rectangles created: " + getCount());
 
-        System.out.printf("Position: (%d, %d)", rect.x,rect.y);
+        Rectangle rect5 = new Rectangle(rect4);
 
+        System.out.println("Height: " + rect5.getHeight());
+        System.out.println("Width: " + rect5.getWidth());
+        System.out.printf("Position: (%d, %d)", rect5.getX(), rect5.getY());
+        System.out.println();
 
+        System.out.println("The area is: " + rect5.getArea());
+        System.out.println("The perimeter is: " + rect5.getPerimeter());
+        System.out.println();
 
-
-
-
-
-
+        System.out.println("A rectangle has: " + Rectangle.ANGLES + " angles.");
+        System.out.println("Number of rectangles created: " + getCount());
     }
 }

@@ -19,7 +19,10 @@ public class C01_CarRunner {
 
         car3.mark="Opel";
         car3.km=19000;
-        car3.color=;
+        car3.color="Red";
+
+
+
 
 
     }
