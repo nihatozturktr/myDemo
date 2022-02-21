@@ -2,19 +2,23 @@ package x03_Circle;
 
 public class Circle {
 
-    static double pi =3.14;
-    static double r;//radius
-    static double  c;//circumference
-    static double area;
+
+    public final static int ANGLES =0;
+    public static int count;
+   private int radius;//radius
+    private int x;//circumference
+    private int y;;
 
 
 
 
-    public Circle(double pi, double r, double c){
+    public Circle(
+
+    ){
 
     }
 
-    static double Area(){
+    static double Area(double v, double v1, double v2){
         return area = pi*r*r;
     }
 
