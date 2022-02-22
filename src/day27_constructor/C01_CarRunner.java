@@ -22,6 +22,17 @@ public class C01_CarRunner {
         car3.color="Red";
 
 
+        C02_Car Car4 = new C02_Car(20,30);
+
+
+        C02_Car Car5= new C02_Car("Red");
+
+        C02_Car Car6 = new C02_Car(23,"red",45,true);
+
+        System.out.println("Car6" + Car6);
+
+
+
 
 
 

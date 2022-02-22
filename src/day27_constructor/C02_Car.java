@@ -15,6 +15,14 @@ public class C02_Car {
     public C02_Car(){
 
     }// No parametter with constractor.
+    public C02_Car(int km, int year){
+
+
+
+    }
+    public C02_Car(String color){
+
+    }
 
 
 
