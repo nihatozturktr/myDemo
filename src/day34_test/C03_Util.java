@@ -9,7 +9,6 @@ public class C03_Util {
         C04_SchoolApp student1 = new C04_SchoolApp(12,"Ali",Boolean.TRUE,Boolean.TRUE,300);
 
 
-        this.studentNane = studentNane;
     }
 
 

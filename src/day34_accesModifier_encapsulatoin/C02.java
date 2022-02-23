@@ -7,5 +7,7 @@ public class C02 {
        // System.out.println(obj.Private); private kendi class"si didisndan ulasilamaz
         System.out.println(obj.numDefault);
         System.out.println(obj.numPublic);
+
+        C01 obj2 = new C01();
     }
 }
