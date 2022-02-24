@@ -9,5 +9,7 @@ public class C02 {
         System.out.println(obj.numPublic);
 
         C01 obj2 = new C01();
+        C01 obj3 = new C01();
+        C01 obj4 = new C01();
     }
 }
