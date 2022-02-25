@@ -2,22 +2,29 @@ package Method;
 
 public class App {
 
-    int x= 3;
-    int y=5;
+    public static void main(String[] args) {
 
-    public boolean dogru(int ilan){
+        String name="Nihat";
 
-        return true;
-    }
+        aPrint(name);
+        aPrint(name);
+        aPrint(name);
 
-    public static int toplama(){
-        // Değişken Tanımlaması:
-        int x=23;
-        int y=624;
-        // Geriye Değer Döndürme:
-        return x+y;
 
     }
 
 
-}
+    public static void aPrint(String x){
+
+        System.out.println(x);
+    }
+
+    }
+
+
+
+
+
+
+
+
