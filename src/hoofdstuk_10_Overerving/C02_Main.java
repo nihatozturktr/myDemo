@@ -10,6 +10,11 @@ public class C02_Main {
 
         manager.showInfos();
         manager.raiseSalary(100);
+        System.out.println(manager.toString());// =System.out.println(manager)
+        C01_Employe employee =new C03_Manager("Mustafa","IT",4000,10);
+
+
+        employee.showInfos();
 
 
 

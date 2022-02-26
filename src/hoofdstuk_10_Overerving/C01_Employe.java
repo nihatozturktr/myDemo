@@ -5,6 +5,18 @@ public class C01_Employe {
     private  String department;
     private   int salary;// Sirket ID
 
+    public String getName() {
+        return name;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
     public C01_Employe(String name, String department, int salary) {
         this.name = name;
         this.department = department;

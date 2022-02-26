@@ -9,6 +9,19 @@ public class C03_Manager extends C01_Employe {
         this.num_of_employes=num_of_employes;
 
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    @Override
+    public void showInfos() {
+        super.showInfos();
+        System.out.println("Sorumlu kisi sayisi :" +this.num_of_employes);
+
+    }
+
     public void raiseSalary(int amount){
         System.out.println("Calisanlara  "+ amount + " zam yapildi");
 
