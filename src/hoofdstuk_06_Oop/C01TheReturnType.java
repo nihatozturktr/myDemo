@@ -1,4 +1,4 @@
-package hoofsturk_06_Oop;
+package hoofdstuk_06_Oop;
 
 public class C01TheReturnType {
     // returns an int value 5

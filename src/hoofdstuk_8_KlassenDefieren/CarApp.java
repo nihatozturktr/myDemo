@@ -1,4 +1,4 @@
-package hoofstuk_8_KlassenDefieren;
+package hoofdstuk_8_KlassenDefieren;
 
 public class CarApp {
     public static void main(String[] args) {

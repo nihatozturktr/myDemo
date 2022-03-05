@@ -1,4 +1,4 @@
-package hoofstuk_07_Arrays;
+package hoofdstuk_07_Arrays;
 
 import java.util.Arrays;
 

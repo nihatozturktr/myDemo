@@ -1,4 +1,4 @@
-package hoofsturk_06_Oop;
+package hoofdstuk_06_Oop;
 
 public class C02TheReturnType {
     public static void main(String[] args) {

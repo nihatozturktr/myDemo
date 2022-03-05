@@ -1,4 +1,4 @@
-package hoofstuk_8_KlassenDefieren;
+package hoofdstuk_8_KlassenDefieren;
 
 public class C02_CarApp {
     private String color;
