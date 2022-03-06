@@ -9,6 +9,14 @@ public class C00_Color {
         GREEN,
         BLUE,
         YELLOW;
+            private Color(){
+
+            }
 
     }
-}
+
+
+
+        }
+
+
