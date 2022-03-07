@@ -1,4 +1,4 @@
-package hooftdstuk_11_De_opsomming;
+package hoofdstuk_11_De_opsomming;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class Main {
         userManager userManager = new userManager();
         // Yetkileri Ekrana Yazdırma İşlemi:
         System.out.println("--------------------\n-> Yetkiler:");
-        for(hooftdstuk_11_De_opsomming.userManager.staffMembers s: hooftdstuk_11_De_opsomming.userManager.staffMembers.values()){
+        for(hoofdstuk_11_De_opsomming.userManager.staffMembers s: hoofdstuk_11_De_opsomming.userManager.staffMembers.values()){
             System.out.println("["+s.getStaffRank()+"] - "+s.name());
         }
         System.out.println("--------------------");
@@ -30,7 +30,7 @@ public class Main {
             authority = 4;
         }
         // Verilen Yetki İsmine Erişmek İçin Kuracağımız For Döngüsü:
-        for(hooftdstuk_11_De_opsomming.userManager.staffMembers s: hooftdstuk_11_De_opsomming.userManager.staffMembers.values()){
+        for(hoofdstuk_11_De_opsomming.userManager.staffMembers s: hoofdstuk_11_De_opsomming.userManager.staffMembers.values()){
             if(s.getStaffRank()== authority){
                 authorityName = s.name();
             }

@@ -1,4 +1,4 @@
-package hooftdstuk_11_De_opsomming;
+package hoofdstuk_11_De_opsomming;
 
 public class userManager {
 

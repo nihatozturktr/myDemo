@@ -1,6 +1,5 @@
-package hooftdstuk_11_De_opsomming;
+package hoofdstuk_11_De_opsomming;
 
-import java.awt.*;
 import java.awt.Color;
 
 
