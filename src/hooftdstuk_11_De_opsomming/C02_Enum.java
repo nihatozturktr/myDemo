@@ -2,27 +2,32 @@ package hooftdstuk_11_De_opsomming;
 
 public class C02_Enum {
 
-    private boolean dayOk;
+    public enum Day {
+        MONDAY(true),
+        TUESDAY(true),
+        WEDNESDAY(true),
+        THURSDAY(true),
+        FRIDAY(true),
+        SATURDAY(false),
+        SUNDAY(false);
 
-    enum Days{
-        MONDAY,TUESDAY, WEDNESDAY, THURSDAY, FRIYDAY, SATURDAY,SUNDAY;
+        private boolean weekDay;
 
-        Days() {
+        Day(boolean weekDay) {
+            this.weekDay = weekDay;
         }
-    }
-    enum Coin{ ONE_CENT, FIVE_CENT, FIFTY_CENT, ONE_EURO, TWO_EURO,
-        ;
 
-        Coin() {
+        public boolean isWeekDay() {
+            return weekDay;
         }
-    }
 
-    @Override
-    public String toString() {
-        return "C02{" +
-                "dayOk=" + dayOk +
-                '}';
-    }
+        @Override
+        public String toString() {
+            return "Day{" +
+                    "weekDay=" + weekDay +
+                    "} ";
+        }
+}
 }
 
 
