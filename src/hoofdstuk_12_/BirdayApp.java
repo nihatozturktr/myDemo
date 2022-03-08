@@ -16,9 +16,13 @@ public class BirdayApp {
         LocalDate date = LocalDate.of(year, month, day);
         System.out.println("Is " + year + " a leap year? " + date.isLeapYear());
 
+
+
         System.out.println(date.getDayOfYear());
         System.out.println(date.getDayOfMonth());
         System.out.println(date.getDayOfWeek().getValue());
+
+
     }
 
 }
