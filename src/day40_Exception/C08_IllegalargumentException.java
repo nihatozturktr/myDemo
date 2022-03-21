@@ -2,7 +2,7 @@ package day40_Exception;
 
 import java.sql.SQLOutput;
 import java.util.Scanner;
-
+@SuppressWarnings("resource")
 public class C08_IllegalargumentException {
 
     public static void main(String[] args) {
