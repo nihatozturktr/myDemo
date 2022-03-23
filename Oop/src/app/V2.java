@@ -38,4 +38,3 @@ public class V2 implements A {
         this.num2 = num2;
     }
 }
-

@@ -4,6 +4,9 @@ import interfaceses.A;
 import objects.method2;
 import objects.methodSum;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class V1 extends methodSum {
     public V1(int num1, int num2, String name) {
         super(num1, num2, name);
@@ -20,7 +23,20 @@ public class V1 extends methodSum {
         System.out.println("a2 "+a2);
 
         method2 a3 = new method2(10,12,"deneme3");
-        System.out.println("a3 "+a2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
