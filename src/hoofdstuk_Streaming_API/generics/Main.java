@@ -14,6 +14,8 @@ public class Main {
         cities.add("Liege");
         cities.add("Namur");
 
+        //
+
 
 
     }
