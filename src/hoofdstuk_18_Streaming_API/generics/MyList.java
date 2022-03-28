@@ -1,4 +1,4 @@
-package hoofdstuk_Streaming_API.generics;
+package hoofdstuk_18_Streaming_API.generics;
 
 public class MyList <T>{
 

@@ -1,4 +1,4 @@
-package hoofdstuk_Streaming_API.generics;
+package hoofdstuk_18_Streaming_API.generics;
 
 import java.util.ArrayList;
 
@@ -13,6 +13,7 @@ public class Main {
         MyList<String> cities = new MyList<>();
         cities.add("Liege");
         cities.add("Namur");
+
 
         //
 

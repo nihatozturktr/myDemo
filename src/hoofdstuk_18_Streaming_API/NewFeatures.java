@@ -1,4 +1,4 @@
-package hoofdstuk_Streaming_API;
+package hoofdstuk_18_Streaming_API;
 
 import java.util.ArrayList;
 import java.util.List;

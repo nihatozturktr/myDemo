@@ -1,4 +1,4 @@
-package hoofdstuk_Streaming_API.repositoryDemo;
+package hoofdstuk_18_Streaming_API.repositoryDemo;
 
 public class ProductDal implements IEntityRepository<Product> {
     @Override
