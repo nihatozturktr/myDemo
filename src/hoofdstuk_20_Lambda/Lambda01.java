@@ -11,6 +11,7 @@ public class Lambda01 {
 
         printElStructured(list);
         printElfunctional(list);
+        printElfunctional1(list);
 
 
 
@@ -28,7 +29,24 @@ public class Lambda01 {
     }
 
     public static void printElfunctional(List<Integer> list){
-        list.stream().forEach(t-> System.out.println(t+ " "));
+        list.stream().forEach(t-> System.out.print(t+ " "));
+
+    }
+    //stream() : datalarin yukaridan asagiya akis sekline getirir
+    //firEach() : datanin parametresine gore her bir elemani isler
+    //Lambda operatoru
+    //Lambda Expression yapisi cok tavsiye edilmez daha cok METHOD REFERENCE kullailir.-
+
+
+    //Method Refrence --> create ettigimiz veya java dan aldigimiz method ile
+     // ClassName::MethodName
+    public static void printEL(int t){
+        System.out.println(t+ " ");
+
+    }
+    public static void printElfunctional1(List<Integer> list){
+
+        list.stream().forEach(Lambda01::printEL);
 
     }
 
