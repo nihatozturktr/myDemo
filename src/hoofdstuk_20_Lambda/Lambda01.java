@@ -150,6 +150,12 @@ public class Lambda01 {
        Optional<Integer> maxEl = list.stream().reduce(Math::max);
         System.out.println(maxEl);
 
+        //bircok datayi yek bir dataya cevirmek icin kullanilir.
+
+
+
+
+
 
 
     }
