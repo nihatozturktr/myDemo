@@ -6,6 +6,15 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+/*1) Lambda "Functional Programming"
+        "Functional Programming" de "Nasil yaparim?" degil "Ne yaparim?" dusunulur.
+        2) "Structured Programming" de "Ne yaparim?" dan cok "Nasil Yaparim?" dusunulur
+        3) "Functional Programming" hiz, code kisaligi, code okunabilirligi
+        ve hatasiz code yazma acilarindan cok faydalidir.
+        4) Lambda sadece collections'larda(List, Queue ve Set) ve array'lerde kullanilabilir ancak map'lerde kullanılmaz.
+        Lambda kullanmak hatasız code kullanmaktır.
+        */
+
 public class Lambda01 {
     public static void main(String[] args) {
 
@@ -151,6 +160,8 @@ public class Lambda01 {
         System.out.println(maxEl);
 
         //bircok datayi yek bir dataya cevirmek icin kullanilir.
+        //reduce()-->azaltmak ... bir cok datayi tek bir dataya(max min carp top vs islemlerde) cevirmek icin kullanilir
+
 
 
 
