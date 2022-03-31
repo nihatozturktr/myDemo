@@ -10,6 +10,14 @@ public abstract class Lambda02 {
         List<Integer> list = new ArrayList(Arrays.asList(12,-3,65,3,7,34,22,-60,42,15));
 
         cifKareMax(list);
+
+
+        toplaEl1(list);
+        System.out.println("***");
+
+
+
+
     }
 
     //List'in cift olan elemanlarin karelerini aliniz ve en buyugunu yazdiriniz
@@ -26,9 +34,28 @@ public abstract class Lambda02 {
     //List'teki tum elemanlarin toplamini yazdiriniz.
     //LAmbda Expression...
     public static void  toplaEl1(List<Integer> list){
-        int toplam = list.stream().reduce(0, (x, y) -> x + y);
+        int toplam = list.
+                stream().
+                reduce(0, (x, y) -> x + y);
+        System.out.println(toplam);
+
+
 
     }
+    public static void topla2(List<Integer> list){
+
+        Optional<Integer> toplam = list.stream().reduce(Integer::sum);
+        Optional<Integer> toplam2 = list.stream().reduce(Math::addExact);
+
+
+    } public static void carpCiftEl(List <Integer> list){
+        Optional<Integer> carp = list.stream().filter(Lambda01::printCifBul).reduce(Math::multiplyExact);
+        System.out.println(carp);
+
+    }
+
+
+
 
 
 }
