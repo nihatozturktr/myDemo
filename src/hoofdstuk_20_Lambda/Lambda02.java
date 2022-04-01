@@ -15,10 +15,7 @@ public abstract class Lambda02 {
         toplaEl1(list);
         System.out.println("***");
 
-
-
-
-    }
+          }
 
     //List'in cift olan elemanlarin karelerini aliniz ve en buyugunu yazdiriniz
     public static void cifKareMax(List<Integer>list){
@@ -53,9 +50,25 @@ public abstract class Lambda02 {
         System.out.println(carp);
 
     }
+    public static void carpCiftEl2(List <Integer> list){
+        int carp2 = list.stream().filter(Lambda01::printCifBul).reduce(1,(x,y)->(x*y));
+        System.out.println(carp2);
+
+    }
+
+    public static void min1 (List <Integer> list){
+       Optional min=  list.stream().reduce(Integer::min);
+        System.out.println(min);
 
 
+    }
+    public static void min2 (List <Integer> list){
+        Optional min2=  list.stream().reduce(Math::min);
+        System.out.println(min2);
 
+
+    }
+    public
 
 
 }
