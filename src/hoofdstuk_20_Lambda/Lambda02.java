@@ -15,6 +15,12 @@ public abstract class Lambda02 {
         toplaEl1(list);
         System.out.println("***");
 
+
+        min4(list);
+        System.out.println("***");
+
+        ciftKareKckBl(list);
+
           }
 
     //List'in cift olan elemanlarin karelerini aliniz ve en buyugunu yazdiriniz
@@ -87,4 +93,19 @@ public abstract class Lambda02 {
         System.out.println(min);
 
 }
+    public static void  onbestenBykTekSayi(List <Integer> list) {
+        System.out.println(list.
+                stream().
+                filter(t ->t % 2 == 1 & t>15).
+                reduce(Integer::min)
+                );
+    }
+    public static void ciftKareKckBl (List <Integer> list){
+
+        list.stream().filter(Lambda01::printCifBul).map(t ->t*t).sorted().forEach(Lambda01::printEL);
+
+    }
+
+
+
 }
