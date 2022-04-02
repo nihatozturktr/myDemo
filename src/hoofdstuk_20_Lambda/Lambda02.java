@@ -86,8 +86,5 @@ public abstract class Lambda02 {
        Integer min = list.stream().reduce(Integer.MAX_VALUE,(x,y)->x<y?x:y);
         System.out.println(min);
 
-
-
-
 }
 }
