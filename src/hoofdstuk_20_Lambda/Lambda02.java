@@ -68,7 +68,25 @@ public abstract class Lambda02 {
 
 
     }
-    public
+    public static int minBul(int x, int y){
+
+        return  x<y ?x:y;
+
+
+
+    }
+
+    public static void min3 (List <Integer> list){
+        Optional min3=  list.stream().reduce(Lambda02::minBul);
+        System.out.println(min3);
+
+
+    }
+    public static void min4 (List <Integer> list){
+       Integer min = list.stream().reduce(Integer.MAX_VALUE,(x,y)->x<y?x:y);
+        System.out.println(min);
+
+
 
 
 }
