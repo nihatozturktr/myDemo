@@ -22,10 +22,12 @@ public class Objeler1 {
     } //
 
     public static boolean ortlamaStudent(List <Intec>myList2){
-      return  myList2.
-              stream().
-              allMatch(t->t.
-                      getStudentNum()>12);
+     return myList2.
+             stream().
+             allMatch(t -> t.// her birimi eslestir
+                     getStudentNum() > 12);
+
+
 
 
 

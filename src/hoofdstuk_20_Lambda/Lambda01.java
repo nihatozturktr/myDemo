@@ -13,7 +13,17 @@ import java.util.Optional;
         ve hatasiz code yazma acilarindan cok faydalidir.
         4) Lambda sadece collections'larda(List, Queue ve Set) ve array'lerde kullanilabilir ancak map'lerde kullanılmaz.
         Lambda kullanmak hatasız code kullanmaktır.
-        */
+
+
+        /*
+	 	1)Lambda is functional programming, we started to use Lambda after Java 8
+	 	2)Functional Programming focuses on "What to do?" but Structured Programming
+	 	  spends time on "How to do?"
+	 	3)Functional Programming can be used just with Collections and Arrays
+	 	4)We cannot use Functional Programming in Maps directy but if you convert Maps to Sets
+	 	  by using entrySet() method then you can use Functional Programming
+	 */
+
 
 public class Lambda01 {
     public static void main(String[] args) {
