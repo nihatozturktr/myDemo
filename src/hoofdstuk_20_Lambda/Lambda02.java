@@ -1,9 +1,6 @@
 package hoofdstuk_20_Lambda;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public abstract class Lambda02 {
     public static void main(String[] args) {
@@ -20,6 +17,9 @@ public abstract class Lambda02 {
         System.out.println("***");
 
         ciftKareKckBl(list);
+
+        System.out.println("***");
+        tekKareBygKsc(list);
 
           }
 
@@ -102,10 +102,21 @@ public abstract class Lambda02 {
     }
     public static void ciftKareKckBl (List <Integer> list){
 
-        list.stream().filter(Lambda01::printCifBul).map(t ->t*t).sorted().forEach(Lambda01::printEL);
+        list.stream().
+                filter(Lambda01::printCifBul).
+                map(t ->t*t).sorted().
+                forEach(Lambda01::printEL);
 
     }
 
+    public static void tekKareBygKsc(List <Integer>list){
+        list.
+                stream().filter(t->t*2!=0).
+                map(t->t*t).
+                sorted(Comparator.reverseOrder()).
+                forEach(Lambda01::printEL);
 
+
+    }
 
 }
