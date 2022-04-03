@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Oop/Oop.iml" filepath="$PROJECT_DIR$/Oop/Oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pandemic Simulator/Pandemic Simulator.iml" filepath="$PROJECT_DIR$/Pandemic Simulator/Pandemic Simulator.iml" />
       <module fileurl="file://$PROJECT_DIR$/my_demo_app.iml" filepath="$PROJECT_DIR$/my_demo_app.iml" />
     </modules>
   </component>
