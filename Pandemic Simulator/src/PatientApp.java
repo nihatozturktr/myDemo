@@ -8,16 +8,19 @@ public class PatientApp {
 
 
 
+        printEl(uniequePatients(Patient.getAllPatients()));
 
-        System.out.print(uniequePatients(Patient.getAllPatients()));
+        System.out.println();
+        System.out.println("************************************");
+
+        printEl(emergencyPatients(Patient.getAllPatients()));
+
+        System.out.println(Patient.getAllPatients());
 
         System.out.println();
         System.out.println("************************************");
 
-        System.out.print(emergencyPatients(Patient.getAllPatients()));
-
-        System.out.println();
-        System.out.println("************************************");
+        System.out.print(ageAndTemperatureSorter(Patient.getAllPatients()));
 
 }
 
@@ -31,6 +34,7 @@ public class PatientApp {
                     distinct().
                     collect(Collectors.toList());
 
+
         }
         public static List<Patient> emergencyPatients (List<Patient> allPatients){// Opdracht 2
 
@@ -41,8 +45,27 @@ public class PatientApp {
                 collect(Collectors.toList());
 
         }
+    public static List<Patient> ageAndTemperatureSorter (List<Patient> allPatients){
+
+        return Patient.getAllPatients().
+                stream().
+                filter((t ->  t.getTemperature() >= 38 || (t.getTemperature() >= 40 && t.isEnsured() == true))).
+                distinct().
+                collect(Collectors.toList());
+
+}
+public static void printEl (List<Patient> allPatients){
+    Patient.getAllPatients().stream().forEach(t-> System.out.println(t));
+
+
+}
+
+
+
+
 
 
 
 
 }
+
