@@ -6,33 +6,28 @@ public class PatientApp2 {
 
     public static void main(String[] args) {
 
+         printEl(uniequePatients(Patient.getAllPatients()));
+
+         System.out.println();
+         System.out.println("-------------------------------------------");
+
+         printEl(emergencyPatients(Patient.getAllPatients()));
+        System.out.println(Patient.getAllPatients().size());
 
 
 
+         System.out.println();
+         System.out.println("-------------------------------------------");
 
+        printEl(ageAndTemperatureSorter(Patient.getAllPatients()));
 
+        System.out.println(ageAndTemperatureSorter(Patient.getAllPatients()).size());
 
+         System.out.println();
+         System.out.println("-------------------------------------------");
 
-
-
-        // printEl(uniequePatients(Patient.getAllPatients()));
-
-        // System.out.println();
-        // System.out.println("-------------------------------------------");
-
-        // printEl(emergencyPatients(Patient.getAllPatients()));
-
-        // System.out.println(Patient.getAllPatients());
-
-        // System.out.println();
-        // System.out.println("-------------------------------------------");
-
-        // System.out.print(ageAndTemperatureSorter(Patient.getAllPatients()));
-
-        // System.out.println();
-        // System.out.println("-------------------------------------------");
-
-        // printEl(opdracht4(Patient.getAllPatients()));
+         printEl(opdracht4(Patient.getAllPatients()));
+        System.out.println(opdracht4(Patient.getAllPatients()).size());
 
 
     }
@@ -46,6 +41,10 @@ public class PatientApp2 {
                 sorted(Comparator.comparing(Patient::getNationalRegistryNumber)).
                 distinct().
                 collect(Collectors.toList());//List of unique patients
+
+
+
+        //..............
 
 
 
@@ -66,7 +65,7 @@ public class PatientApp2 {
                 stream().
                 filter((t ->  t.getTemperature() >= 38 || (t.getTemperature() >= 40 && t.isEnsured() == true))).
                 distinct().
-                collect(Collectors.toList());
+                collect(Collectors.toList()).;
 
 
 
@@ -79,27 +78,6 @@ public class PatientApp2 {
                 collect(Collectors.toList());
 
 
-
-       // List<Patient> category1 = Patient.getAllPatients().stream()
-       //         .filter((e -> e.getAge() < 65 && e.getTemperature() >= 38 || (e.getTemperature() >= 40 && e.isUnKnownVirus() == true)))
-       //         .distinct()
-       //         .collect(Collectors.toList());
-       // category1.forEach(System.out::println);
-       // System.out.println( category1.size());
-//
-       // List<Patient> category2 = Patient.getAllPatients().stream()
-       //         .filter((e -> e.getTemperature() >= 38 && e.isUnKnownVirus() == true))
-       //         .distinct()
-       //         .collect(Collectors.toList());
-       // category2.forEach(System.out::println);
-       // System.out.println( category2.size());
-//
-       // List<Patient> category3 = Patient.getAllPatients().stream()
-       //         .filter((e -> e.getTemperature() <= 38 && e.isUnKnownVirus() == true))
-       //         .distinct()
-       //         .collect(Collectors.toList());
-       // category3.forEach(System.out::println);
-       // System.out.println( category3.size());
 
 
 

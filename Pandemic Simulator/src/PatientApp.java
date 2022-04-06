@@ -60,12 +60,18 @@ public class PatientApp {
         category3.forEach(System.out::println);
         System.out.println( category3.size());
 
+        List<Patient> category4 = Patient.getAllPatients().stream()
+                .filter((e -> e.getTemperature() >= 38 && e.isEnsured() == true))
+                .distinct()
+                .collect(Collectors.toList());
+
 
         Map<Integer, List<Patient>> mapCollection = new HashMap<>();
 
         mapCollection.put(1, category1);
         mapCollection.put(2, category2);
         mapCollection.put(3, category3);
+        mapCollection.put(4, category4);
 
 
 
@@ -83,15 +89,6 @@ public class PatientApp {
 
 
     }
-
-
-
-
-
-
-
-
-
 
 
 }
