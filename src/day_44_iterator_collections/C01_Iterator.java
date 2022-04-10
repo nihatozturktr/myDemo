@@ -17,6 +17,20 @@ public class C01_Iterator {
 
         System.out.println(liste);
 
+        // index kullanmadan elemanlari 3 eklenmis olarak yazdirin
+
+        for (Integer each :liste             ) {
+            System.out.println(each+3 +" ");
+
+        }
+        System.out.println(" ");
+        System.out.println(liste);// [5, 3, 7, 1, 9, 8, 2] yazar
+
+        // foreach loop ile index kullanmadan tum elementlere ulasabiliyoruz ama kalici degisiklik yapamiyoruz
+
+
+
+
 
     }
 
