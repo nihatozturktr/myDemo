@@ -1,8 +1,10 @@
 package day45_Collections;
 
 import javax.swing.tree.TreeModel;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
+import java.util.List;
 
 public class C01_LinkedList {
 
@@ -15,6 +17,16 @@ public class C01_LinkedList {
     // Has
 
     public static void main(String[] args) {
+        List<Integer> ll0 = new ArrayList<>();
+        ll0.add(0);
+        ll0.add(2);
+
+        LinkedList <Integer> ll1 = new LinkedList<>();
+        ll1.add(90);
+        ll1.add(97);
+
+
+
         LinkedList <Integer> ll = new LinkedList<>();// Java bir datayi tutacak kadar bir obje olusturur
 
         ll.add(15);
@@ -25,6 +37,8 @@ public class C01_LinkedList {
         System.out.println(ll.hashCode());
 
         ll.add(2,34);
+        ll.addAll(ll1);
+
 
 
         ll.add(17);
