@@ -18,6 +18,7 @@ public class C04_Set {
         System.out.println(s1);
 
 
+
         List<Object> list = new ArrayList<>();
 
         list.add("Java");
@@ -26,5 +27,7 @@ public class C04_Set {
         list.add(s1);
 
         System.out.println(list);
+
+
     }
 }
