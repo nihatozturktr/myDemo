@@ -15,6 +15,8 @@ public class C04_Deque {
         System.out.println(ciftBasli);
 
         System.out.println(ciftBasli.pop());
+        System.out.println(ciftBasli);
+        ciftBasli.pop();
 
 
 

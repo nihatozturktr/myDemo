@@ -1,4 +1,4 @@
-package Day_42_AbstractClasses;
+package day42_AbstractClasses;
 
 public class Worker extends Accounting{
 
