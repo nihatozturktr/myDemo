@@ -14,18 +14,16 @@ public class C03_ForEach {
         myArrGroup.add("veli");
         myArrGroup.add("deli");
 
-        for (int i = 0; i <  myArrGroup.size(); i++) {
+       //for (int i = 0; i <  myArrGroup.size(); i++) {
 
-            System.out.println("name "+ myArrGroup.get(i));
+       //    System.out.println("name "+ myArrGroup.get(i));
 
-        }
+       //}
         for (String s  :myArrGroup
              ) {
             System.out.println("name2 "+ s);
             
         }
-
-
 
     }
 

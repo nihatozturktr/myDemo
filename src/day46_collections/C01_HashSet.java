@@ -21,4 +21,7 @@ public class C01_HashSet {
         Object[] tekrarsizArr = uniqeSet.toArray();
         System.out.println(Arrays.toString(tekrarsizArr));
     }
+
+
+
 }

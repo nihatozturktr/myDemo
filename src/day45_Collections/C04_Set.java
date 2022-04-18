@@ -28,6 +28,5 @@ public class C04_Set {
 
         System.out.println(list);
 
-
     }
 }
