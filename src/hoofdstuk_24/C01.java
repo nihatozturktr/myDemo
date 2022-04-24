@@ -30,6 +30,17 @@ public class C01 {
         }
         System.out.println("-> Dosyanın Adı: " + file.getName());
         System.out.println("-> Dosyanın Dizin Yolu: "+ file.getPath()+"\n"+ayrac);
+
+        System.out.println("File name "+file.getName());
+        System.out.println("File length "+file.length());
+
+        System.out.println("-> Dosyanın Mevcut Adını [\""+file.getName()+"\"] Değiştirerek [\"dosya-metotlari.txt\"] Yapalım.");
+
+        File degistir = new File("//Users/nihat//Documents//Java Proje txt//dosya-metotlari.txt");
+        file.renameTo(degistir); ///---> Dosyamızın İsmi Değiştirildi <---\\\
+
+        System.out.println("File last name "+degistir.getName());
+
     }
 
 
