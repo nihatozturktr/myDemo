@@ -21,7 +21,7 @@ public class C01 {
         else{
             ///---> Dosya Belirlemiş Olduğumuz Dizin Üzerinde Bulunmuyorsa Dosyanın Oluşmasını Sağlayacak Kodu Yazıyoruz <---\\\
             try{
-                file.createNewFile();
+                file.createNewFile();//
                 System.out.println("-> Dizin Üzerinde Dosya Oluşturuldu !!!\n"+ayrac);
             }
             catch (IOException e){
