@@ -30,16 +30,7 @@ public class MessageApp {
             throw new RuntimeException(e);
         }
 
-        try (BufferedWriter bufferedWriter = new BufferedWriter(
-                new FileWriter(messagePath.toString())
-        )){
 
-            bufferedWriter.write("Welk kledingstuk denkt alleen maar aan zichzelf?\n" +
-                    "Antwoord: Asosjaal.”");
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
         try {
             FileWriter fileWriter = new FileWriter(String.valueOf(messagePath));
             fileWriter.write("Live as if you will die tomorrow, learn as if you will live forever.");
